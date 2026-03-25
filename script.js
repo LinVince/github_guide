@@ -84,10 +84,34 @@ const nodeInfo = {
       "If you see a version number, your terminal is working correctly."
   },
 
+  "new-repo": {
+    title: "Create a New Repository",
+    video: "https://www.youtube.com/watch?v=-RZ03WHqkaY", // Git Init Tutorial
+    content:
+      "This process sets up a local Git repository and connects it to GitHub so you can track changes and upload your code online\n" +
+      "1. Create a new folder on your computer, example: Desktop/MyProject\n" +
+      "2. Right-click the folder → 'Open in terminal'\n" +
+      "3. Type: git init\n" +
+      "4. Press Enter (this creates a local Git repository)\n" +
+      "5. Go to GitHub and create a new repository (do NOT add README if you already have files)\n" +
+      "6. Copy the repository URL\n" +
+      "7. Back in the terminal, add the remote repository:\n" +
+      "   git remote add origin <your-repo-url>\n" +
+      "8. Add your files to Git. After you finishing editing, type\n" +
+      "   git add .\n" +
+      "9. Then cmmit your files:\n" +
+      "   git commit -m \"Initial commit\"\n" +
+      "10. Push to GitHub and set upstream:\n" +
+      "   git branch -M main\n" +
+      "   git push -u origin main\n" +
+      "11. Now your local folder is connected to GitHub and tracking is set!"
+  },
+
   "clone": {
     title: "Clone an Existing Repository",
     video: "https://www.youtube.com/watch?v=CKcqniGu3tA", // Git Clone Tutorial
     content:
+      "This is an alternative to creating your own project from scratch. You can clone an existing repository and make modifications. Before cloning a repository and pushing it to your own repository, you need to create a new repository on GitHub." +
       "1. Go to any GitHub repo you want to copy\n" +
       "2. Click the green 'Code' button\n" +
       "3. Make sure 'HTTPS' is selected\n" +
@@ -95,19 +119,20 @@ const nodeInfo = {
       "5. Open your terminal in the folder you want the project saved into (either using `cd` or right-click the folder and select Open in Terminal.\n" +
       "6. Type: git clone <paste-URL-here>\n" +
       "7. Press Enter and wait\n" +
-      "8. When it's done, the copy of the repository is now on your computer!"
+      "8. When it's done, the copy of the repository is now on your computer." +
+      "9. To push the cloned repository to your own, go to GitHub and create a new repository (do NOT add README if you already have files)." +
+      "10. Copy the new repository URL\n" +
+      "11. Back in the terminal, add the remote repository:\n" +
+      "   git remote add origin <your-repo-url>\n" +
+      "12. Add your files to Git. After you finishing editing, type\n" +
+      "   git add .\n" +
+      "13. Then cmmit your files:\n" +
+      "   git commit -m \"Initial commit\"\n" +
+      "14. Push to GitHub and set upstream:\n" +
+      "   git branch -M main\n" +
+      "   git push -u origin main\n" 
   },
 
-  "new-repo": {
-    title: "Create a New Local Repository",
-    video: "https://www.youtube.com/watch?v=-RZ03WHqkaY", // Git Init Tutorial
-    content:
-      "1. Create a new folder on your computer, example: Desktop/MyProject\n" +
-      "2. Right-click the folder → 'Open in terminal'\n" +
-      "3. Type: git init\n" +
-      "4. Press Enter\n" +
-      "5. Now Git is tracking this folder!"
-  },
   
   "push": {
     title: "Push Branch to GitHub",
